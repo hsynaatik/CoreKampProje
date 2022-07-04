@@ -1,0 +1,53 @@
+﻿<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+                <h3>Hakkımızda</h3>
+                <p>Türkçe Vikipedi'de bulunan bazı maddeler, 17 Kasım 2014 tarihinden itibaren Türkiye'deki kullanıcıların erişimine engellendi. Bu engelleme URL tabanlı olup sadece HTTP bağlantılar üzerinde etkili olmuştur</p>
+                <div class="read">
+                    <a href="/About/Index/" class="btn btn-primary read-m">Devamını Oku</a>
+                </div>
+            </div>
+            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+                @await Component.InvokeAsync("BlogLast3Post")
+            </div>
+            <div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+                <h2>Mail Bültenine Abone Olun</h2>
+                @await  Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+            </div>
+        </div>
+        <div class="footer-cpy text-center">
+            <div class="footer-social">
+                <div class="copyrighttop">
+                    <ul>
+                        <li >
+                            <a class="" href="https://www.instagram.com/hsynaatik/">
+                                <i class="fab fa-instagram"></i>
+                                <span>İnstagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-github" href="https://github.com/hsynaatik">
+                                <i class="fab fa-github"></i>
+                                <span>Github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="https://www.linkedin.com/in/huseyin-atik/">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="w3layouts-agile-copyrightbottom">
+                <p>
+                    © @DateTime.Now.Year Asp.Net Core 5 Proje Kampı Tüm Hakları Saklıdır | Design by
+                    <a href="">Hüseyin ATIK</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

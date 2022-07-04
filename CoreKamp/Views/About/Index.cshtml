@@ -1,0 +1,100 @@
+﻿@using CoreKamp.EntityLayer.Concrete
+@model List<About>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- About ındex -->
+
+</head>
+
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+</style>
+
+<body>
+
+
+
+    <section class="main-content-w3layouts-agileits">
+        <div class="container">
+            <h3 class="tittle"> Hüseyin Atık | KodDünyası</h3>
+            <div class="row inner-sec">
+
+                <!--left-->
+                <div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
+                    <div class="blog-grid-top">
+
+                        <div class="blog_info_left_grid">
+                            <a href="single.html">
+                                <img src="~/CoreBlogTema/images/ben.jpg" width="430" height="600" alt="">
+                            </a>
+                        </div>
+                        <br />
+                        <br />
+
+                        <h4>
+                            Selam, Ben Hüseyin Atık.25 mayıs 2002 Bursa/İznik doğumluyum.
+                            Düzce Üniversitesi bilgisayar programcılığı,
+                            Eğitim sürecim içerisinde yazılım alanında araştırma, öz motivasyon, girişimcilik ve farklı yetenekler edinme noktasında kendimi geliştirdim.
+                            Özgeçmişimde de görebileceğiniz gibi farklı eğitimlerle ve yaptığım bireysel araştırmalarla kendimi iş hayatına hazırladım.
+                            Proje deneyimimi arttırmamı sağladı. Kendimi geliştiyorum ve
+                            araştırmalarıma devam ediyorum.
+                        </h4>
+
+                        @* <h4>@item.AboutDetails1</h4>*@
+
+
+                        <a href="#" class="btn btn-primary read-m"> Daha Fazla Oku </a>
+                    </div>
+
+                </div>
+                <!--//left-->
+                <!--right-->
+                <aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
+                    <div class="right-blog-info text-left">
+
+                        @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+
+
+                        @await Html.PartialAsync("~/Views/About/SocialMediaAbout.cshtml")
+
+                        <div class="tech-btm">
+                            <h4>Son  Postlar</h4>
+
+                            @await Component.InvokeAsync("WriterLastBlog")
+
+                        </div>
+                    </div>
+
+                </aside>
+                <!--//right-->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+

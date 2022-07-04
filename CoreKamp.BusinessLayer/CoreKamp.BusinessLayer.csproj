@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreKamp.DataAccessLayer\CoreKamp.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\CoreKamp.EntityLayer\CoreKamp.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.0.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>

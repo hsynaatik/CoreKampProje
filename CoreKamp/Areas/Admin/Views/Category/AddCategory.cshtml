@@ -1,0 +1,36 @@
+﻿@model CoreKamp.EntityLayer.Concrete.Category
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Category Ekleme Sayfası</h1>
+<br />
+
+@using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
+{
+    @Html.Label("Kategori Başlığını Giriniz")
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryName, "", new { @class = "text-danger " })
+    <br />
+    <br />
+    @Html.Label("Kategori Açıklamasını Giriniz!")
+    @Html.TextAreaFor(x => x.CategoryDescription, 15, 3, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryDescription, "", new { @class = "text-danger" })
+    <br />
+    <br />
+    <div>
+        <button class="btn btn-outline-success">Kaydet</button>
+        <a href="/Admin/Category/" class="btn btn-success">Kategori Listesine Dön </a>
+    </div>
+    
+}
+<br />
+
+
+@section scripts
+{
+    <scripts>
+
+    </scripts>
+}

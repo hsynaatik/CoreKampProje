@@ -1,0 +1,233 @@
+﻿@{
+     ViewData["Title"] = "Ana Sayfa";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<body>
+    <div class="banner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <h3>
+                            Hakkımda
+                            <span>Hüseyin Atık Kimdir ?</span>
+                        </h3>
+                        <div class="read">
+                            <a href="/About/index/" class="btn btn-primary read-m">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item2">
+                    <div class="carousel-caption">
+                        <h3>
+                            Yazılım dilleri
+                            <span>C#</span>
+                        </h3>
+                        <div class="read">
+                            <a href="/Blog/index/" class="btn btn-primary read-m">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item3">
+                    <div class="carousel-caption">
+                        <h3>
+                            Yazılım dilleri
+                            <span>Java</span>
+                        </h3>
+                        <div class="read">
+                            <a href="/Blog/index/" class="btn btn-primary read-m">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item4">
+                    <div class="carousel-caption">
+                        <h3>
+                            Yazılım Temeli
+                            <span>Sql</span>
+                        </h3>
+                        <div class="read">
+                            <a href="/Blog/index/" class="btn btn-primary read-m">Daha Fazla</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <section class="main-content-w3layouts-agileits">
+        <div class="container">
+            <h3 class="tittle">Başa Tutturan Bloglar</h3>
+
+            <br />
+            <div class="row ">
+
+                <br /> <hr />
+
+                <div class="col-lg-4 ">
+
+                    <article class="blog-grid-top">
+                        <div class="b-grid-top">
+                            <div class="blog_info_left_grid">
+                                <a href="single.html">
+                                    <img src="/CoreBlogTema/images/4.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-info-middle">
+
+
+                            </div>
+                        </div>
+
+                        <h3>
+                            <a href="single.html">Amet consectetur adipisicing </a>
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
+                            aute irudre dolor in elit sed uta labore dolore reprehender
+                        </p>
+                        <a href="single.html" class="btn btn-primary read-m">Read More</a>
+                    </article>
+
+
+
+
+
+
+                </div>
+
+                <div class="col-lg-4">
+                    <article class="blog-grid-top">
+                        <div class="b-grid-top">
+                            <div class="blog_info_left_grid">
+                                <a href="single.html">
+                                    <img src="/CoreBlogTema/images/2.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-info-middle">
+
+
+                            </div>
+                        </div>
+
+                        <h3>
+                            <a href="single.html">Amet consectetur adipisicing </a>
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
+                            aute irudre dolor in elit sed uta labore dolore reprehender
+                        </p>
+                        <a href="single.html" class="btn btn-primary read-m">Read More</a>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="blog-grid-top">
+                        <div class="b-grid-top">
+                            <div class="blog_info_left_grid">
+                                <a href="single.html">
+                                    <img src="/CoreBlogTema/images/8.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-info-middle">
+
+
+                            </div>
+                        </div>
+
+                        <h3>
+                            <a href="single.html">Amet consectetur adipisicing </a>
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
+                            aute irudre dolor in elit sed uta labore dolore reprehender
+                        </p>
+                        <a href="single.html" class="btn btn-primary read-m">Read More</a>
+                    </article>
+                </div>
+                <div class="col-12">   @await Component.InvokeAsync("CategoryList") </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!--/ start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+    <script>
+        $(document).ready(function () {
+            /*
+                                    var defaults = {
+                                            containerID: 'toTop', // fading element id
+                                        containerHoverID: 'toTopHover', // fading element hover id
+                                        scrollSpeed: 1200,
+                                        easingType: 'linear'
+                                        };
+                                    */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <a href="#home" class="scroll" id="toTop" style="display: block;">
+        <span id="toTopHover" style="opacity: 1;"> </span>
+    </a>
+
+    <!-- //Custom-JavaScript-File-Links -->
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
